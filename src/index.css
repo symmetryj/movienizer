@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  @apply bg-gray-500;
+}
+.card {
+  @apply container relative max-h-[-180px] max-w-xs m-5 inline-block;
+}
+.tag {
+  width: inherit;
+  justify-content: space-between;
+  @apply inline-flex bg-blue-600 absolute scale-0
+    bottom-0 p-2 right-0 transition-transform box-border;
+}
