@@ -1,0 +1,425 @@
+@font-face {
+  font-family: nazanin;
+  src: url(../fonts/BNazanin.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: nazanin, sans-serif;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-detail {
+  position: absolute;
+  top: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero-bg {
+  position: relative;
+  width: 100vw;
+  height: 30rem;
+}
+.circle-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero-title {
+  color: white;
+  font-size: 1rem;
+}
+.hero-dec {
+  top: 4rem;
+  padding: 1rem 2rem 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  word-spacing: 0.125rem;
+  color: white;
+}
+.hero-btn {
+  margin-bottom: 2.5rem;
+  background-color: rgba(248, 127, 16, 1);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.hero-img-big {
+  display: none;
+}
+/* contact section */
+
+.contact {
+  margin: 5rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-name {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+}
+.contact-icon {
+  width: 2rem;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+.contact-dec {
+  text-align: center;
+  padding: 1rem;
+}
+.form-title {
+  padding: 2rem 1rem 0.5rem 1rem;
+  text-align: right;
+  color: rgba(35, 89, 131, 1);
+  font-weight: 700;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.nameInput-img {
+  display: flex;
+  flex-direction: column;
+}
+.nameInput-img > img {
+  width: 20px;
+}
+.input {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgba(149, 149, 149, 0.13);
+  border: none;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 1rem;
+  line-height: 1.375rem;
+  font-size: 0.875rem;
+  text-align: right;
+}
+.form-btn {
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  border: none;
+  background-color: rgba(32, 87, 129, 1);
+  color: white;
+  border-radius: 1rem;
+  line-height: 1.375rem;
+  font-size: 0.875rem;
+}
+.contact-img {
+  width: 50%;
+  align-self: center;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+#margin {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+/* card section */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  max-width: 748px;
+  background-color: rgba(32, 87, 129, 0.08);
+  border-radius: 1rem;
+  margin: 0.25rem 1rem;
+  padding: 1rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  color: rgba(32, 87, 129, 1);
+  padding-left: 4rem;
+  margin: 6px 0;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+.card-icon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  width: 31px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.card-icon > img {
+  transition: all 200ms ease-out;
+}
+.active > img {
+  rotate: -180deg;
+  transition: all 200ms ease-out;
+}
+.card-dec {
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  padding-top: 1rem;
+}
+
+/* collapsible */
+.collapsible {
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  /* width: 100%; */
+  border: none;
+  /* text-align: left; */
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: white;
+}
+
+.collapsible:after {
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border-radius: 1rem;
+  border: 1px solid #888;
+  width: 350px;
+}
+
+/*Close Button */
+.close {
+  color: rgba(255, 0, 0, 0.7);
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: none;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2.5rem;
+}
+.message > h2 {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+/* media q */
+
+@media screen and (min-width: 768px) {
+  /* hero */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-dec {
+    font-size: 1.25rem;
+    padding: 1.25rem 6.5rem;
+    line-height: 2rem;
+  }
+  .hero-bg {
+    height: 45rem;
+  }
+  .circle-left,
+  .circle-right {
+    zoom: 3;
+  }
+  .hero-btn {
+    font-size: 1.25rem;
+    margin: 3rem 1rem;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-img-big {
+    display: block;
+  }
+  /* contact */
+  .contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .c1 {
+    margin-top: 17.5rem;
+  }
+  .title {
+    margin-right: 1rem;
+  }
+  .contact-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .contact-dec {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: right;
+  }
+  .form-title {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: right;
+  }
+  .input,
+  .form-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    max-width: 60%;
+  }
+  .contact-dec {
+    max-width: 75%;
+  }
+  .contact-img {
+    max-width: 30%;
+    margin-left: 5rem;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .card-title {
+    font-size: 1.125rem;
+    justify-self: center;
+    margin: 8px 0;
+  }
+  .collapsible {
+    padding: 20px;
+  }
+  .card-dec {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  #margin {
+    margin-top: 3rem;
+  }
+  /* modal */
+  .modal-content {
+    width: 633px;
+    height: 580px;
+  }
+  .message {
+    margin-top: 5rem;
+  }
+  .message > h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+
+  .message > img {
+    zoom: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-dec {
+    padding: 1.25rem 12.5rem;
+  }
+}
